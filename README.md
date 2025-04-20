@@ -1,6 +1,6 @@
 # Blender Ideation Agent
 
-An AI-powered agent for Blender ideation sessions using Claude 3.7 and Python 3.12.
+An AI-powered agent for Blender ideation sessions using Claude 3.7 and Python 3.11.
 
 ## Features
 
