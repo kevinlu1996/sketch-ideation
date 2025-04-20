@@ -24,7 +24,6 @@ An AI-powered agent for Blender ideation sessions using Claude 3.7 and Python 3.
 1. Clone the repository:
    ```bash
    git clone git@github.com:kevinlu1996/sketch-ideation.git
-   cd blender-ideation-agent
    ```
 
 2. Install dependencies with Poetry:
