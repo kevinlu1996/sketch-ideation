@@ -1,0 +1,38 @@
+[tool.poetry]
+name = "blender-ideation-agent"
+version = "0.1.0"
+description = "AI agent for Blender ideation sessions using Claude 3.7"
+authors = ["kevinlu106@gmail.com"]
+readme = "README.md"
+packages = [{include = "blender_ideation"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+streamlit = "^1.33.0"
+anthropic = "^0.49.0" 
+httpx = "^0.27.0"
+pillow = "^10.2.0"
+matplotlib = "^3.8.3"
+numpy = "^1.26.4"
+python-dotenv = "^1.0.1"
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.3.0"
+isort = "^5.13.2"
+pytest = "^7.4.3"
+flake8 = "^7.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+start = "blender_ideation.app:main"
+
+[tool.black]
+line-length = 88
+target-version = ["py312"]
+
+[tool.isort]
+profile = "black"
+line_length = 88
