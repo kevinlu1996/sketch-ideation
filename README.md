@@ -15,7 +15,7 @@ An AI-powered agent for Blender ideation sessions using Claude 3.7 and Python 3.
 
 ### Prerequisites
 
-- Python 3.12+
+- Python 3.11+
 - Poetry (for dependency management)
 - Blender 3.6+ (optional, for direct Blender integration)
 
@@ -23,12 +23,13 @@ An AI-powered agent for Blender ideation sessions using Claude 3.7 and Python 3.
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/blender-ideation-agent.git
+   git clone git@github.com:kevinlu1996/sketch-ideation.git
    cd blender-ideation-agent
    ```
 
 2. Install dependencies with Poetry:
    ```bash
+   poetry lock
    poetry install
    ```
 
@@ -41,7 +42,7 @@ An AI-powered agent for Blender ideation sessions using Claude 3.7 and Python 3.
 
 1. Start the application:
    ```bash
-   poetry run start
+   poetry run streamlit run blender_ideation/app.py
    ```
 
 2. Navigate to the provided URL (typically `http://localhost:8501`)
